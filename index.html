@@ -7,41 +7,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <form class="input-form">
+      <form class="input-form" id="inputDate" action="">
         <div class="input-date">
-          <label for="day">Day</label>
-          <label for="month">Month</label>
-          <label for="year">Year</label>
-          <input type="number" class="input-field" placeholder="DD" id="day" />
+          <label for="day">DAY</label>
+          <label for="month">MONTH</label>
+          <label for="year">YEAR</label>
+          <input
+            type="number"
+            class="input-field"
+            placeholder="DD"
+            id="day"
+            name="day"
+          />
           <input
             type="number"
             class="input-field"
             placeholder="MM"
             id="month"
+            name="month"
           />
           <input
             type="number"
             class="input-field"
             placeholder="YYYY"
             id="year"
+            name="year"
           />
         </div>
+
         <input type="submit" class="submit-button" />
       </form>
       <hr />
       <div class="result">
-        <p class="result-year">years</p>
-        <p class="result-month">months</p>
-        <p class="result-day">days</p>
+        <p class="year-result">
+          <span class="calculated calculated-year">--</span>years
+        </p>
+        <p class="month-result">
+          <span class="calculated calculated-month">--</span>months
+        </p>
+        <p class="day-result">
+          <span class="calculated calculated-day">--</span>days
+        </p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
